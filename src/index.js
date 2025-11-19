@@ -15,6 +15,13 @@ window.addEventListener("scroll", () => {
 
 });
 
+const btn = document.querySelector(".mobile-menu-button");
+const navList = document.getElementById("nav-list");
+
+btn.addEventListener("click", () => {
+    navList.classList.toggle("open");
+});
+
 
 const copyrightYear = document.getElementById("copyright-year");
 copyrightYear.textContent = new Date().getFullYear();

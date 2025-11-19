@@ -3,17 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sauna seca e úmida, piscina, área de churrasco e drinks incríveis — tudo isso em um ambiente tranquilo e acolhedor, no coração do bairro Iate Clube, em Balneário Camboriú.">
-    <meta name="keywords" content="Sauna, Sauna Seca, Sauna Úmida, Spa, Sauna em Balneário Camboriú, Spa em Balneário Camboriú">
-    <title>Beira Rio Sauna - Iate Clube</title>
+    <meta name="description" content="Beira Rio Sauna - Sauna seca e úmida, piscina, área de churrasco e drinks incríveis em Balneário Camboriú. Ambiente tranquilo no bairro Iate Clube para relaxamento e bem-estar.">
+    <meta name="keywords" content="Sauna, Sauna Seca, Sauna Úmida, Spa, Relaxamento, Bem-estar, Balneário Camboriú, Iate Clube, Piscina, Spa em SC">
+    <meta name="author" content="G. Amaral">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://beirariosauna.com.br">
+    <meta property="og:title" content="Beira Rio Sauna - Relaxamento e Bem-estar em Balneário Camboriú">
+    <meta property="og:description" content="Sauna seca e úmida, piscina e área de lazer no coração do Iate Clube. Seu refúgio de tranquilidade.">
+    <meta property="og:image" content="https://beirariosauna.com.br/src/imagens/banner.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://beirariosauna.com.br">
+    <meta property="twitter:title" content="Beira Rio Sauna - Relaxamento e Bem-estar">
+    <meta property="twitter:description" content="Sauna seca e úmida, piscina e área de lazer no Iate Clube, Balneário Camboriú.">
+    <meta property="twitter:image" content="https://beirariosauna.com.br/src/imagens/banner.jpg">
+    
+    <title>Beira Rio Sauna - Iate Clube | Sauna e Relaxamento em Balneário Camboriú</title>
+    <link rel="canonical" href="https://beirariosauna.com.br">
     <link rel="shortcut icon" href="src/imagens/favicon.png" type="image/x-png">
     <link rel="stylesheet" href="src/index.css">
 </head>
 <body>
-    <header>
-        <nav id="nav-bar" class="container">
-            <a href="index.html">
-                <img class="logo" src="src/imagens/logo.png" alt="Logo de Beira Rio Sauna" >
+    <header role="banner">
+        <nav id="nav-bar" class="container" role="navigation" aria-label="Menu principal">
+            <a href="index.html" aria-label="Ir para página inicial">
+                <img class="logo" src="src/imagens/logo.png" alt="Logo Beira Rio Sauna - Relaxamento e Bem-estar">
+                <img class="logo-mobile" src="src/imagens/favicon.png" alt="Logo Beira Rio Sauna">
             </a>
         
             <ul id="nav-list">
@@ -24,221 +42,230 @@
                 <li class="nav-item"><a class="nav-link" href="#gallery-section">Fotos</a></li>
                 <li class="nav-item"><a class="nav-link" href="#reviews-section">Avaliações</a></li>
             </ul>
+
+            <button class="mobile-menu-button" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <img src="src/imagens/menu-icone.png" alt="">
+            </button>
         </nav>
     </header>
 
-    <section id="hero-section">
+    <main>
+        <section id="hero-section" aria-labelledby="hero-title">
             <div class="hero-section-content">
-                <h1>Relaxe às margens do rio. <br>
+                <h1 id="hero-title">Relaxe às margens do rio. <br>
                 Viva momentos de puro bem-estar.</h1>
-                <p>Sauna seca e úmida, piscina, área de churrasco e drinks incríveis — tudo isso em um ambiente tranquilo e acolhedor, no coração do bairro Iate Clube, em Balneário Camboriú.</p>
+                <p>Sauna seca e úmida, piscina, área de churrasco e drinks incríveis – tudo isso em um ambiente tranquilo e acolhedor, no coração do bairro Iate Clube, em Balneário Camboriú.</p>
             </div>
-    </section>
+        </section>
 
-    <section id="about-section">
-            <h2 class="section-title">Sobre Nós</h2>
-            <div class="title-bar"></div>
-            <div class="about-section-content" class="container">
-                <div class="about-text-container">
-                    <p>Ambiente privativo e acolhedor, ideal para quem busca relaxar e recarregar as energias. Nosso espaço conta com sauna seca e sauna úmida, ambas totalmente equipadas para oferecer conforto e bem-estar em qualquer momento do seu descanso.</p>
-                    <p>Dispomos ainda de serviço de bar e alimentação, com cardápio disponível conforme programação do dia. Também oferecemos espaço exclusivo para eventos pré-agendados, perfeito para momentos de lazer, confraternizações ou encontros recreativos.</p>
-                    <p>Localizado em uma área de fácil acesso e total discrição, nosso ambiente foi planejado para proporcionar conforto, tranquilidade e privacidade em todos os detalhes.</p>
-                    <div class="icons-container">
-                        <div class="icons-item">
-                            <div class="icon">
-                                <img src="src/imagens/lotus-icone.png" alt="Ícone de Lotus">
+        <section id="about-section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">Sobre Nós</h2>
+                <div class="title-bar" role="presentation"></div>
+                <div class="about-section-content">
+                    <div class="about-text-container">
+                        <p>Ambiente privativo e acolhedor, ideal para quem busca relaxar e recarregar as energias. Nosso espaço conta com sauna seca e sauna úmida, ambas totalmente equipadas para oferecer conforto e bem-estar em qualquer momento do seu descanso.</p>
+                        <p>Dispomos ainda de serviço de bar e alimentação, com cardápio disponível conforme programação do dia. Também oferecemos espaço exclusivo para eventos pré-agendados, perfeito para momentos de lazer, confraternizações ou encontros recreativos.</p>
+                        <p>Localizado em uma área de fácil acesso e total discrição, nosso ambiente foi planejado para proporcionar conforto, tranquilidade e privacidade em todos os detalhes.</p>
+                        <div class="icons-container">
+                            <div class="icons-item">
+                                <div class="icon" role="img" aria-label="Ícone representando ambiente sereno">
+                                    <img src="src/imagens/lotus-icone.png" alt="" aria-hidden="true">
+                                </div>
+                                <span>Ambiente Sereno</span>
                             </div>
-                            Ambiente Sereno
-                        </div>
-                        <div class="icons-item">
-                            <div class="icon">
-                                <img src="src/imagens/estrela-icone.png" alt="Ícone de Estrela">
+                            <div class="icons-item">
+                                <div class="icon" role="img" aria-label="Ícone representando espaço preparado">
+                                    <img src="src/imagens/estrela-icone.png" alt="" aria-hidden="true">
+                                </div>
+                                <span>Espaço Preparado</span>
                             </div>
-                            Espaço Preparado
-                        </div>
-                        <div class="icons-item">
-                            <div class="icon">
-                                <img src="src/imagens/equipe-icone.png" alt="Ícone de Equipe">
+                            <div class="icons-item">
+                                <div class="icons-item">
+                                <div class="icon" role="img" aria-label="Ícone representando equipe de qualidade">
+                                    <img src="src/imagens/equipe-icone.png" alt="" aria-hidden="true">
+                                </div>
+                                <span>Equipe de Qualidade</span>
                             </div>
-                            Equipe de Qualidade
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-image-container">
-                    <img src="src/imagens/piscina.jpg" alt="">
-                </div>
-            </div>
-    </section>
-
-    <section id="location-section">
-        <div class="location-section-content">
-            <h2 class="section-title">Onde nos encontrar</h2>
-            <div class="title-bar"></div>
-            <div class="location-content-container">
-                <div class="map-container">
-                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d888.6149333300045!2d-48.63358660202645!3d-27.01563517984177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b6796ed9ad1b%3A0xc5c44751f5682dd2!2sClube%20Beira%20Rio!5e0!3m2!1spt-BR!2sbr!4v1762785691659!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="location-information">
-                    <div class="address-container">
-                        <h3>Endereço</h3>
-                        <p>Rua Aurora, 1580 - Bairro Iate Clube, Balneário Camboriú/SC - CEP: 88337-225</p>
-                    </div>
-                    <div class="hours-container">
-                        <h3>Horário de Funcionamento</h3>
-                        <ul>
-                            <li>Segunda à sexta-feira: 14h às 21:30h.</li>
-                            <li>Sábado: 14h às 20h.</li>
-                            <li>Fechado.</li>
-                        </ul>
-                    </div>
-                    <a class="maps-button" href=""> 
-                        <img src="src/imagens/endereco-icone.png" alt="">
-                        Ir para o Maps
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery-section">
-        <div class="gallery-section-content">
-            <h2 class="section-title">Galeria de Fotos</h2>
-            <div class="title-bar"></div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-1.JPG" alt="">
-                </div>
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-2.JPG" alt="">
-                </div>
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-3.JPG" alt="">
-                </div>
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-4.JPG" alt="">
-                </div>
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-5.JPG" alt="">
-                </div>
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-6.JPG" alt="">
-                </div>
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-7.JPG" alt="">
-                </div>
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-8.JPG" alt="">
-                </div>
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-9.JPG" alt="">
-                </div>
-                
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-10.JPG" alt="">
-                </div>
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-11.JPG" alt="">
-                </div>
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-12.JPG" alt="">
-                </div>
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-13.JPG" alt="">
-                </div>
-                <div class="gallery-item">
-                    <img src="src/imagens/galeria-foto-14.JPG" alt="">
-                </div>
-            </div>
-            <a class="instagram-button" href="">
-                <img src="src/imagens/instagram-icone.png">
-                Visite nosso Instagram
-            </a>
-        </div>
-    </section>
-
-    <section id="contact-section">
-        <div class="contact-content">
-            <h2 class="section-title">Entre em contato</h2>
-            <div class="title-bar"></div>
-            <p>Desfrute seu momento de relaxamento conosco e aproveite uma experiência única de bem-estar.</p>
-            <a href="" class="whatsapp-button">
-                <img src="src/imagens/whatsapp-icon.png">
-                Fale conosco pelo WhatsApp
-            </a>
-            <h3 class="other-contacts-title">Outras formas de contato:</h3>
-            <ul class="other-contacts-list">
-                <li class="other-contacts-item">
-                  <img class="other-contacts-icon" src="src/imagens/telefone-icone.png" alt="Ícone de Telefone">  
-                  Telefone Fixo: (47) 3368-6492
-                </li>
-                <li class="other-contacts-item">
-                  <img class="other-contacts-icon" src="src/imagens/email-icone.png" alt="Ícone de E-mail">  
-                  E-mail: beirariosauna@gmail.com
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="reviews-section">
-        <div class="reviews-section-content">
-            <h2 class="section-title">O que nossos clientes dizem</h2>
-            <div class="title-bar"></div>
-            <div class="carousel">
-                <div class="carousel-track">
-                    <div class="card active">
-                        <div class="card-photo">
-                            <img src="src/imagens/carlos-foto.jpg" alt="Foto do Cliente">
-                        </div>
-                        <img src="src/imagens/cinco-estrelas.png" class="five-stars">
-                        <h3>Carlos Eduardo</h3>
-                        <p>Experiência maravilhosa do início ao fim. Desde a recepção até o momento de sair, tudo foi feito com muito profissionalismo. O local transmite paz e cuidado, e é nítido que a equipe se preocupa com o bem-estar de cada cliente. Sem dúvida, o melhor refúgio para relaxar e recarregar as energias.</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo">
-                            <img src="src/imagens/mariana-foto.jpg" alt="Foto do Cliente">
-                        </div>
-                        <img src="src/imagens/cinco-estrelas.png" class="five-stars">
-                        <h3>Mariana Costa</h3>
-                        <p>Simplesmente encantada com o ambiente! A sauna é extremamente limpa, bem cuidada e tem um clima de tranquilidade que faz a gente esquecer completamente o mundo lá fora. Dá pra sentir o cuidado em cada detalhe, desde o aroma até a temperatura perfeita. Saí de lá renovada</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo">
-                            <img src="src/imagens/joão-foto.jpg" alt="Foto do Cliente">
-                        </div>
-                        <img src="src/imagens/cinco-estrelas.png" class="five-stars">
-                        <h3>João Ferreira</h3>
-                        <p>Frequento há alguns meses e posso dizer que é uma das melhores experiências de relaxamento que já tive. O atendimento é impecável, os profissionais são muito atenciosos e o espaço é confortável e discreto. Sempre que saio, me sinto leve e revigorado. Recomendo de olhos fechados!</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-photo">
-                            <img src="src/imagens/renata-foto.jpg" alt="Foto do Cliente">
-                        </div>
-                        <img src="src/imagens/cinco-estrelas.png" class="five-stars">
-                        <h3>Renata Lima</h3>
-                        <p>Fui com algumas amigas e adoramos! O ambiente é acolhedor, com uma energia superpositiva. A sauna tem um aroma suave e a temperatura é ajustada com perfeição. O pós-sauna, com área de descanso e bebidas geladas, é o toque final. Dá vontade de voltar toda semana!</p>
+                    <div class="about-image-container">
+                        <img src="src/imagens/piscina.jpg" alt="Piscina da Beira Rio Sauna com área de lazer">
                     </div>
                 </div>
             </div>
-            <div class="navigation-container">
-                <button class="prev">&#10094;</button>
-                <div class="indicators">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                </div>
-                <button class="next">&#10095;</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
+        <section id="location-section" aria-labelledby="location-title">
+            <div class="location-section-content container">
+                <h2 id="location-title" class="section-title">Onde nos encontrar</h2>
+                <div class="title-bar" role="presentation"></div>
+                <div class="location-content-container">
+                    <div class="map-container">
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d888.6149333300045!2d-48.63358660202645!3d-27.01563517984177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b6796ed9ad1b%3A0xc5c44751f5682dd2!2sClube%20Beira%20Rio!5e0!3m2!1spt-BR!2sbr!4v1762785691659!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de localização da Beira Rio Sauna no Iate Clube"></iframe>
+                    </div>
+                    <div class="location-information">
+                        <div class="address-container">
+                            <h3>Endereço</h3>
+                            <address>Rua Aurora, 1580 - Bairro Iate Clube, Balneário Camboriú/SC - CEP: 88337-225</address>
+                        </div>
+                        <div class="hours-container">
+                            <h3>Horário de Funcionamento</h3>
+                            <ul>
+                                <li>Segunda à sexta-feira: 14h às 21:30h</li>
+                                <li>Sábado: 14h às 20h</li>
+                                <li>Domingo: Fechado</li>
+                            </ul>
+                        </div>
+                        <a class="maps-button" href="https://www.google.com/maps/place/Clube+Beira+Rio/@-27.0156352,-48.6335866,20z/data=!4m6!3m5!1s0x94d8b6796ed9ad1b:0xc5c44751f5682dd2!8m2!3d-27.0156715!4d-48.6330748!16s%2Fg%2F11bw40dy65" target="_blank" rel="noopener noreferrer" aria-label="Abrir localização no Google Maps"> 
+                            <img src="src/imagens/endereco-icone.png" alt="" aria-hidden="true">
+                            Ir para o Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery-section" aria-labelledby="gallery-title">
+            <div class="gallery-section-content">
+                <h2 id="gallery-title" class="section-title">Galeria de Fotos</h2>
+                <div class="title-bar" role="presentation"></div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-1.JPG" alt="Ambiente interno da sauna Beira Rio" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-2.JPG" alt="Área de relaxamento da sauna" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-3.JPG" alt="Espaço de lazer Beira Rio" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-4.JPG" alt="Vista da área externa" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-5.JPG" alt="Detalhes do ambiente" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-6.JPG" alt="Espaço para eventos" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-7.JPG" alt="Área de descanso" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-8.JPG" alt="Vista panorâmica" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-9.JPG" alt="Ambiente acolhedor" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-10.JPG" alt="Detalhes da decoração" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-11.JPG" alt="Área de convivência" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-12.JPG" alt="Espaço tranquilo" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-13.JPG" alt="Ambiente preparado" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="src/imagens/galeria-foto-14.JPG" alt="Vista do espaço completo" loading="lazy">
+                    </div>
+                </div>
+                <a class="instagram-button" href="https://www.instagram.com/beirariosauna" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil do Instagram da Beira Rio Sauna">
+                    <img src="src/imagens/instagram-icone.png" alt="" aria-hidden="true">
+                    Visite nosso Instagram
+                </a>
+            </div>
+        </section>
+
+        <section id="contact-section" aria-labelledby="contact-title">
+            <div class="contact-content">
+                <h2 id="contact-title" class="section-title">Entre em contato</h2>
+                <div class="title-bar" role="presentation"></div>
+                <p>Desfrute seu momento de relaxamento conosco e aproveite uma experiência única de bem-estar.</p>
+                <a href="https://wa.me/5547999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Beira%20Rio%20Sauna" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Enviar mensagem pelo WhatsApp">
+                    <img src="src/imagens/whatsapp-icon.png" alt="" aria-hidden="true">
+                    Fale conosco pelo WhatsApp
+                </a>
+                <h3 class="other-contacts-title">Outras formas de contato:</h3>
+                <ul class="other-contacts-list">
+                    <li class="other-contacts-item">
+                      <img class="other-contacts-icon" src="src/imagens/telefone-icone.png" alt="" aria-hidden="true">  
+                      <span>Telefone Fixo: <a href="tel:+554733686492">(47) 3368-6492</a></span>
+                    </li>
+                    <li class="other-contacts-item">
+                      <img class="other-contacts-icon" src="src/imagens/email-icone.png" alt="" aria-hidden="true">  
+                      <span>E-mail: <a href="mailto:beirariosauna@gmail.com">beirariosauna@gmail.com</a></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="reviews-section" aria-labelledby="reviews-title">
+            <div class="reviews-section-content">
+                <h2 id="reviews-title" class="section-title">O que nossos clientes dizem</h2>
+                <div class="title-bar" role="presentation"></div>
+                <div class="carousel" role="region" aria-label="Avaliações de clientes">
+                    <div class="carousel-track">
+                        <article class="card">
+                            <div class="card-photo">
+                                <img src="src/imagens/carlos-foto.jpg" alt="Foto de Carlos Eduardo">
+                            </div>
+                            <img src="src/imagens/cinco-estrelas.png" class="five-stars" alt="Avaliação: 5 estrelas" aria-label="5 de 5 estrelas">
+                            <h3>Carlos Eduardo</h3>
+                            <p>Experiência maravilhosa do início ao fim. Desde a recepção até o momento de sair, tudo foi feito com muito profissionalismo. O local transmite paz e cuidado, e é nítido que a equipe se preocupa com o bem-estar de cada cliente. Sem dúvida, o melhor refúgio para relaxar e recarregar as energias.</p>
+                        </article>
+                        <article class="card">
+                            <div class="card-photo">
+                                <img src="src/imagens/mariana-foto.jpg" alt="Foto de Mariana Costa">
+                            </div>
+                            <img src="src/imagens/cinco-estrelas.png" class="five-stars" alt="Avaliação: 5 estrelas" aria-label="5 de 5 estrelas">
+                            <h3>Mariana Costa</h3>
+                            <p>Simplesmente encantada com o ambiente! A sauna é extremamente limpa, bem cuidada e tem um clima de tranquilidade que faz a gente esquecer completamente o mundo lá fora. Dá pra sentir o cuidado em cada detalhe, desde o aroma até a temperatura perfeita. Saí de lá renovada.</p>
+                        </article>
+                        <article class="card">
+                            <div class="card-photo">
+                                <img src="src/imagens/joão-foto.jpg" alt="Foto de João Ferreira">
+                            </div>
+                            <img src="src/imagens/cinco-estrelas.png" class="five-stars" alt="Avaliação: 5 estrelas" aria-label="5 de 5 estrelas">
+                            <h3>João Ferreira</h3>
+                            <p>Frequento há alguns meses e posso dizer que é uma das melhores experiências de relaxamento que já tive. O atendimento é impecável, os profissionais são muito atenciosos e o espaço é confortável e discreto. Sempre que saio, me sinto leve e revigorado. Recomendo de olhos fechados!</p>
+                        </article>
+                        <article class="card">
+                            <div class="card-photo">
+                                <img src="src/imagens/renata-foto.jpg" alt="Foto de Renata Lima">
+                            </div>
+                            <img src="src/imagens/cinco-estrelas.png" class="five-stars" alt="Avaliação: 5 estrelas" aria-label="5 de 5 estrelas">
+                            <h3>Renata Lima</h3>
+                            <p>Fui com algumas amigas e adoramos! O ambiente é acolhedor, com uma energia superpositiva. A sauna tem um aroma suave e a temperatura é ajustada com perfeição. O pós-sauna, com área de descanso e bebidas geladas, é o toque final. Dá vontade de voltar toda semana!</p>
+                        </article>
+                    </div>
+                </div>
+                <div class="navigation-container">
+                    <button class="prev" aria-label="Ver avaliação anterior">&#10094;</button>
+                    <div class="indicators" role="tablist" aria-label="Indicadores do carrossel">
+                        <span class="dot active" role="tab" aria-label="Primeira página de avaliações" aria-selected="true"></span>
+                        <span class="dot" role="tab" aria-label="Segunda página de avaliações" aria-selected="false"></span>
+                    </div>
+                    <button class="next" aria-label="Ver próxima avaliação">&#10095;</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
         <div class="container">
-            <p>&copy <span id="copyright-year"></span> Beira Rio Sauna. Todos os direitos reservados</p>
-            <a href="">Site desenvolvido por G. Amaral</a>
+            <p>&copy; <span id="copyright-year"></span> Beira Rio Sauna. Todos os direitos reservados</p>
+            <a href="https://www.gamaral.dev" target="_blank" rel="noopener noreferrer">Site desenvolvido por G. Amaral</a>
         </div>
     </footer>
 
-    <a class="floating-button" href="">
-        <img src="src/imagens/whatsapp-logo.png" alt="Ir para o WhatsApp">
+    <a class="floating-button" href="https://wa.me/5547999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Beira%20Rio%20Sauna" target="_blank" rel="noopener noreferrer" aria-label="Contato rápido pelo WhatsApp">
+        <img src="src/imagens/whatsapp-logo.png" alt="" aria-hidden="true">
     </a>
 
     <script src="src/index.js"></script>
