@@ -710,7 +710,8 @@ header.scrolled .logo {
     align-items: center;
     justify-content: center;
     margin-top: 3rem;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
     width: 100%;
 }
 
@@ -718,9 +719,10 @@ header.scrolled .logo {
     display: flex;
     align-items: stretch;
     gap: 2rem;
-    padding: 0 1rem;
+    padding: 1rem;
     transition: transform 0.5s ease;
     will-change: transform;
+    width: 90%;
 }
 
 .card {

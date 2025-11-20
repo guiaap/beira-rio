@@ -135,21 +135,33 @@ if (carouselTrack && prevButton && nextButton && cards.length > 0) {
 
     // Aqui está o “conserto”: usamos a posição real do card,
     // em vez de tentar calcular largura + margem + gap.
+    // Cálculo revisado usando a posição real do card
     function updateCarousel() {
         if (!cards.length) return;
 
-        const maxIndex = Math.max(0, totalCards - cardsPerView);
-        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        // Garante que o índice fique dentro dos limites válidos
+        const maxStartIndex = Math.max(0, totalCards - cardsPerView);
         if (currentIndex < 0) currentIndex = 0;
+        if (currentIndex > maxStartIndex) currentIndex = maxStartIndex;
 
-        const baseOffset = cards[0].offsetLeft;
-        const targetOffset = cards[currentIndex].offsetLeft;
+        const firstCard = cards[0];
+        const targetCard = cards[currentIndex];
 
-        const offset = targetOffset - baseOffset;
+        // Usa a posição real do card dentro do track, em vez de cálculo de largura
+        const offset = targetCard.offsetLeft - firstCard.offsetLeft;
 
         carouselTrack.style.transform = `translateX(-${offset}px)`;
 
-        updateActiveDot();
+        const allDots = document.querySelectorAll('.dot');
+        const currentPage = Math.floor(currentIndex / cardsPerView);
+
+        allDots.forEach((dot, index) => {
+            const isActive = index === currentPage;
+            dot.classList.toggle('active', isActive);
+            dot.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+
+        updateButtons();
     }
 
     prevButton.addEventListener('click', () => {
